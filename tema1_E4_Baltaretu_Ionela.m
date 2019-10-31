@@ -1,0 +1,29 @@
+x=[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+n=0:20;
+m=-5:15;
+subplot(7,1,1)
+stem(x,n)
+subploat(7,1,2)
+steam(x,m)
+for i=1:lenght(n)
+    if 10-n(i)>0
+        t(i)=10-n(i);
+    else
+        t(i)=n(i)-10;
+    end
+end
+subplot(7,1,3)
+stem(t,n)
+n=-15:25;
+subplot(7,1,4)
+x1=sin(n*pi/17);
+plot(n,x1)
+q=0:50;
+subplot(7,1,5)
+x2=cos(q*pi/sqrt(23));
+plot(q,x2)
+plot(n,x1,q,x2)
+subplot(7,1,6)
+stem(n,x1)
+subplot(7,1,7)
+stem(q,x2)
